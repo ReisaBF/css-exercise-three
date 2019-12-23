@@ -11,6 +11,7 @@ body {
 .container {
   margin: 0 auto;
   width: 420px;
+  position: relative;
 }
 
 nav {
@@ -19,23 +20,15 @@ nav {
   padding: 15px;
   position: fixed;
   width: 420px;
-  display: inline-block;
+  z-index: 9999;
 }
 
 .restaurant-list {
-  padding: 50px;
+  padding-top: 15px;
   height: 50%;
   width: 125%;
-}
-
-.content h1 {
-  font-size:26px;
-  color:#000000;
-}
-
-.content h3 {
-  font-size: 14px;
-  color:#000000;
+  position: relative;
+  z-index: 9999;
 }
 
 .location {
@@ -45,14 +38,29 @@ nav {
   padding: auto;
   border: 1px solid #000000;
   display: inline-block;
-  float: left;
 }
 
-.location:hover{
+.location:hover {
   background-color: darkgrey;
 }
 
 .arrow {
    float: right;
-   display: inline-block;
+   display:inline-block;
+   padding-right: 10px;
+   margin-top: -40px;
+}
+
+h1 {
+  font-size:26px;
+  color:#000000;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  color:#000000;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
